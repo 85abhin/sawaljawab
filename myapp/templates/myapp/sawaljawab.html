@@ -1,0 +1,77 @@
+{% extends 'myapp/base.html' %}
+
+{% block title %}sawaljawab{% endblock title %}
+    
+
+{% block content %}
+
+<div class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+    <h3 class="mt-3" id="gujaratiheadings">સવાલ જવાબ માં તમારું સ્વાગત છે. અહીં તમે પ્રશ્નો અને જવાબો ના અભ્યાસ સરળતાથી કરી શકશો.</h3>
+    <hr>
+    <div class="row mt-4 shadow p-3">   <!--main row that have two divs one contain current affairs and lists -->
+        <!-- 10 Cards -->
+        <h4 style="color: darkgreen;"> current affairs Questions answers</h4>
+
+        <div class="currentaffairs col-sm-7 mt-2"> <!--This is 1st div that contain columns with lists-->
+        <!-- Here is the code for displaying the Questions And Ansewrs here
+        currentlly, Code is static for design purpose. You can manipulate when you need to display the 
+        data from the database.
+        -->
+        <div class="quiz-container">
+            <!-- This is a Question 1 -->
+            <div class="question" id="question1">1. What is the capital of France?</div>
+                <ul class="options">
+                <li class="option" onclick="showAnswer(1, 'Option A')">A. Madrid</li>
+                <li class="option" onclick="showAnswer(1, 'Option B')">B. Berlin</li>
+                <li class="option" onclick="showAnswer(1, 'Option C')">C. Paris</li>
+                <li class="option" onclick="showAnswer(1, 'Option D')">D. Rome</li>
+                </ul>
+                <div class="answer" id="answer1"></div>
+            <hr>
+
+            <!-- This is a Question 2 div -->
+            <div class="question" id="question2">2. What is the capital of Japan?</div>
+                <ul class="options">
+                    <li class="option" onclick="showAnswer(2, 'Option A')">A. Beijing</li>
+                    <li class="option" onclick="showAnswer(2, 'Option B')">B. Seoul</li>
+                    <li class="option" onclick="showAnswer(2, 'Option C')">C. Tokyo</li>
+                    <li class="option" onclick="showAnswer(2, 'Option D')">D. Bangkok</li>
+                </ul>
+                <div class="answer" id="answer2"></div>
+                <hr>
+                
+                    <!-- Pagination code here -->
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                    </ul>
+                </nav>
+          </div>
+        </div>
+         <!--Second div that consist quick links etc..-->   
+        <div class="quicklinks col-sm-4 ms-5">
+           <h3 class="blink_me m-2 text-center">More Links</h3>
+           <hr>
+           <ul class="m-3">
+               <li><a href="#">GPSC Test</a></li>
+               <li><a href="#">GSSSB Test</a></li>
+               <li><a href="#">Computer Test</a></li>
+               <li><a href="#">Superviser Instructor Test</a></li>
+               <li><a href="#">Talati Test</a></li>
+               <li><a href="#">Maths Test</a></li>
+               <li><a href="#">Reasoning Test</a></li>
+           </ul>          
+        </div>
+         
+        <h3 class="text-center text-success">!! All the Best !!</h3>
+
+       
+
+    </div>
+
+{% endblock content %}
+    

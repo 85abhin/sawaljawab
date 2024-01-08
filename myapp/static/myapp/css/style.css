@@ -1,0 +1,199 @@
+/* 
+  css style here 
+*/
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: 'Anek Gujarati', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'PT Sans', sans-serif;
+} 
+
+.collapse > .navbar-brand{
+    color:#644D48;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.collapse > .navbar-nav > .nav-item > .nav-link{
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-family: 'PT Sans', sans-serif;
+    color: #232121;
+}
+.sidebar-sticky{
+    overflow:scroll;
+    flex-grow: 1;
+    color: aqua;
+    height: 580px;
+    scroll-behavior: smooth;
+}
+.sidebar-sticky > .nav > .nav-item > .nav-link {
+    font-size: 18px;
+    color: #232121;
+ }
+/* .sidebar-sticky > a:hover {
+  color:red;
+  font-size: 19px;
+} */
+
+
+/* Add a hover effect to the navigation links on aside bar &  add hovering effect to navbar*/
+#sidebar .nav-link:hover, #navbarTogglerDemo01 .nav-link:hover {
+    background-color: rgb(9, 97, 9); /* Light gray background color */
+    color: white;
+    border-radius: 5px;
+}
+
+
+/* This is a CSS for card container and card */
+
+
+#cardcontainer{
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+  width: 300px;
+  margin: 10px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.card > .card-body> ul > li{
+  list-style-type: square;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color:  rgb(11, 63, 11); 
+}
+.card > .card-body> ul > li > a{
+  text-decoration: none;
+  font-size: 18px;
+}
+.card > .card-body> ul > li > a:hover{
+   background-color: rgb(10, 95, 10);
+   color: white;
+   padding: 3px;
+   border-radius: 3px;
+}
+
+/* css to gujarati headings */
+#gujaratiheadings{
+  font-family: 'Anek Gujarati', sans-serif;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 22px;
+  letter-spacing: 1px;
+ 
+  color: green;
+}
+ /* Add styles for the footer */
+ footer {
+  background-color: #f8f9fa; /* Light gray background color */
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* Add styles for the footer links */
+footer a {
+  color: #007bff; /* Bootstrap primary color */
+  text-decoration: none;
+}
+
+/* Add hover effect to footer links */
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Current affairs div CSS here  */
+.currentaffairs{
+  width: 700px;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
+
+}
+.column > ul > li {
+ list-style-type: none;
+ padding: 5px;
+ letter-spacing: 1px;  
+ font-size: 19px;
+ 
+}
+.column {
+  
+  width: 40%;
+  height: auto;
+}
+.column > ul > li > a{
+  text-decoration: none;
+  color: darkolivegreen;
+}
+.column> ul > li > a:hover{
+  color: green;
+  font-size: 20px;
+  padding: 5px;
+  font-weight: bold;
+}
+
+/* Quick links CSS here */
+
+.blink_me {
+  animation: blinker 2s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+.quicklinks > ul > li{
+  list-style: none;
+  padding: 5px;
+  text-decoration: none;
+  color: darkolivegreen;
+}
+.quicklinks > ul > li > a{
+  text-decoration: none;
+  font-size: 18px;
+  letter-spacing: 1px;
+
+}
+.quicklinks > ul > li > a:hover{
+  color: green;
+  font-size: 20px;
+  font-family: bold;
+}
+
+/* This is a code for questions answer from sawaljawab page.. */
+.quiz-container {
+  max-width: 600px;
+  margin: 50px auto;
+}
+.question {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.options {
+  list-style-type: none;
+  padding: 0;
+}
+.option {
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+.answer {
+  margin-top: 20px;
+  font-weight: bold;
+  display: none;
+}
+
+
+
