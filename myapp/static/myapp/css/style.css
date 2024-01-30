@@ -24,7 +24,7 @@
     overflow:scroll;
     flex-grow: 1;
     color: aqua;
-    height: 580px;
+    height: auto;
     scroll-behavior: smooth;
 }
 .sidebar-sticky > .nav > .nav-item > .nav-link {
@@ -120,14 +120,13 @@ footer a:hover {
 
 }
 .column > ul > li {
- list-style-type: none;
+ list-style-type: circle;
  padding: 5px;
  letter-spacing: 1px;  
  font-size: 19px;
  
 }
 .column {
-  
   width: 40%;
   height: auto;
 }
@@ -194,6 +193,57 @@ footer a:hover {
   font-weight: bold;
   display: none;
 }
+/* ---------------------------questions ans---------------------- */
+.innersection{
+    width: auto;
+    height: auto;
+    margin: 0px auto;
+    background-color:white;
+    border-radius: 5px;
+}
+.questionsection{
+   border: 1px solid whitesmoke;
+}
+.innersection > div{
+    font-family: 'Anek Gujarati', sans-serif;
+    font-family: 'Noto Serif Gujarati', serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+    width: auto;
+    height: auto;
+    margin-left: 10px;
+    padding: 10px;
+     color: rgb(51, 49, 49);
+}
+.innersection > div > ul > li > a{
+    text-decoration: none;
+   
+}
+.innersection > div > ul > li > a:hover{
+    cursor: pointer;
+    color: blue;
+}
+.innersection > div > p {
+    text-align:left;
+    
+}
+.correct-answer {
+color: white !important;
+background-color: green; /* Change to the desired color for correct answers */
+padding: 5px;
+border-radius: 3px;
+}
+
+.wrong-answer {
+    color: white !important;
+    background-color: rgba(228, 59, 59, 0.966); /* Change to the desired color for wrong answers */
+    padding: 5px;
+    border-radius: 3px;
+
+    }
+
 
 
 

@@ -2,20 +2,20 @@
     <div class="sidebar-sticky">
         <ul class="nav flex-column">
                       <li class="nav-item">
-                          <a class="nav-link active" href="#">
+                          <a class="nav-link active" href="{% url 'currentaffairspage' %}">
                             Current Affairs
                           </a>
                       </li>
                      
                       <li class="nav-item">
-                          <a class="nav-link" href="#">
-                            Maths and Reasoning
+                          <a class="nav-link" href="{% url 'reasoningpage' %}">
+                            Reasoning 
                           </a>
                       </li>
                      
                       <li class="nav-item">
-                          <a class="nav-link" href="#">
-                             History
+                          <a class="nav-link" href="{% url 'aptitudepage' %}">
+                            Quantitative Aptitude
                           </a>
                       </li>
                      
@@ -35,8 +35,8 @@
                     </a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">
-                        Gujarati Grammer / Sahitya
+                      <a class="nav-link" href="{% url 'gujaratipage' %}">
+                        Gujarati Grammer 
                       </a>
                   </li>
                   <li class="nav-item">
@@ -50,11 +50,6 @@
                         </a>
                     </li>
                   <li class="nav-item">
-                      <a class="nav-link" href="#">
-                        Gujarati Grammer / sahitya
-                      </a>
-                  </li>
-                  <li class="nav-item">
                     <a class="nav-link" href="#">
                      Surveyer 
                     </a>
@@ -65,15 +60,10 @@
                   </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">
-                  English Grammer / Literature
+                <a class="nav-link" href="{% url 'englishpage' %}">
+                  English Grammer
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                Contact Us
-                </a>
-            </li>
         </ul>
     </div>
 </nav>

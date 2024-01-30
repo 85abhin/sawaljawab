@@ -1,6 +1,6 @@
 {% extends 'myapp/base.html' %}
 
-{% block title %}sawaljawab{% endblock title %}
+{% block title %}Questions-Answers{% endblock title %}
     
 
 {% block content %}
@@ -18,28 +18,28 @@
         data from the database.
         -->
         <div class="quiz-container">
-            <!-- This is a Question 1 -->
-            <div class="question" id="question1">1. What is the capital of France?</div>
-                <ul class="options">
-                <li class="option" onclick="showAnswer(1, 'Option A')">A. Madrid</li>
-                <li class="option" onclick="showAnswer(1, 'Option B')">B. Berlin</li>
-                <li class="option" onclick="showAnswer(1, 'Option C')">C. Paris</li>
-                <li class="option" onclick="showAnswer(1, 'Option D')">D. Rome</li>
-                </ul>
-                <div class="answer" id="answer1"></div>
-            <hr>
-
-            <!-- This is a Question 2 div -->
-            <div class="question" id="question2">2. What is the capital of Japan?</div>
-                <ul class="options">
-                    <li class="option" onclick="showAnswer(2, 'Option A')">A. Beijing</li>
-                    <li class="option" onclick="showAnswer(2, 'Option B')">B. Seoul</li>
-                    <li class="option" onclick="showAnswer(2, 'Option C')">C. Tokyo</li>
-                    <li class="option" onclick="showAnswer(2, 'Option D')">D. Bangkok</li>
-                </ul>
-                <div class="answer" id="answer2"></div>
-                <hr>
-                
+           
+            <section class="questionsection">
+                <h1 style="color: whitesmoke; font-size: 40px;">Questions and Answers</h1>
+                <div class="innersection">
+                       {% for q in Qusestion_Answer %}      
+                       <div>
+                          <h4 style="text-align: left;"> <span class="question_id">{{q.id}})</span> {{q.question}}</h4>
+                           <ul style="text-align: left; list-style:upper-alpha;">
+                               <li><a onclick="optASelected(this, '{{ q.answer }}', '{{ q.ans_description}}')">{{q.opt_A}}</a></li>
+                               <li><a onclick="optBSelected(this, '{{ q.answer }}', '{{ q.ans_description}}')">{{q.opt_B}}</a></li>
+                               <li><a onclick="optCSelected(this, '{{ q.answer }}', '{{ q.ans_description}}')">{{q.opt_C}}</a></li>
+                               <li><a onclick="optDSelected(this, '{{ q.answer }}', '{{ q.ans_description}}')">{{q.opt_D}}</a></li>
+                           </ul>
+                           <p class="AnswerDescription">
+                               <!-- {{ q.answer }} is the Correct Answer !! -->
+                           </p>
+                       </div>
+                       <hr>
+                       {% endfor %}
+                      
+                </div>
+           </section>         
                     <!-- Pagination code here -->
                 <nav aria-label="Page navigation example">
                     <ul class="pagination justify-content-center">
@@ -50,7 +50,7 @@
                         <li class="page-item"><a class="page-link" href="#">Next</a></li>
                     </ul>
                 </nav>
-          </div>
+            </div>
         </div>
          <!--Second div that consist quick links etc..-->   
         <div class="quicklinks col-sm-4 ms-5">
