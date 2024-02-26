@@ -8,11 +8,11 @@
                     <div class="card-body">
                         <h5 class="card-title">Reasoning</h5>
                          <ul>
-                            <li><a href="#">Problems on Ages</a></li>
-                            <li><a href="#">Venn Diagram</a></li>
-                            <li><a href="#">Visual Reasoning</a></li>
-                            <li><a href="#">Arithmatic reasoning</a></li>
-                            <li> <a href="#">Blood Relation</a></li>
+                            <li><a href="{% url 'reasoningquestionspage' category_slug='problems_on_age' %}">Problems on Ages</a></li>
+                            <li><a href="#">Venn Diagram(coming soon..)</a></li>
+                            <li><a href="#">Visual Reasoning(coming soon..)</a></li>
+                            <li><a href="{% url 'reasoningquestionspage' category_slug='number_system' %}">Number System</a></li>
+                            <li> <a href="{% url 'reasoningquestionspage' category_slug='blood_relation' %}">Blood Relation</a></li>
                             <a href="{% url 'reasoningpage' %}"><p>more..</p></a>
                          </ul>
                     </div>
@@ -22,11 +22,11 @@
                     <div class="card-body">
                         <h5 class="card-title">Quantitative Aptitude</h5>
                         <ul>
-                            <li><a href="#">Number Systems</a></li>
+                            <li><a href="{% url 'reasoningquestionspage' category_slug='number_system' %}">Number Systems</a></li>
                             <li><a href="#">Simplification and Algebra</a></li>
                             <li><a href="#">Arithmetic and Geometric Progression</a></li>
-                            <li><a href="#">Average</a></li>
-                            <li> <a href="#">Percentage</a></li>
+                            <li><a href="{% url 'reasoningquestionspage' category_slug='Average' %}">Average</a></li>
+                            <li> <a href="{% url 'reasoningquestionspage' category_slug='Percentage' %}">Percentage</a></li>
                             <a href="{% url 'aptitudepage' %}"><p>more..</p></a>
                          </ul>
                     </div>

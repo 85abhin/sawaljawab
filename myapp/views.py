@@ -1,4 +1,6 @@
 from django.shortcuts import render
+from .models import *
+from django.core.paginator import Paginator
 
 # Create your views here.
 
@@ -13,13 +15,18 @@ def home(request):
 def currentaffairs(request):
     return render(request,'myapp/currentaffairs.html')
 
-# This is question page where every question should be display here..
-def sawaljawab(request):
-    return render(request,'myapp/sawaljawab.html')
 
 # In reasoning page, all resoning topics list here..
 def reasoning(request):
     return render(request,'myapp/reasoning.html')
+
+def reasoning_questions(request,category_slug):
+    maths_and_reasoning=Maths_and_Reasoning.objects.filter(question_topic=category_slug) 
+    print(maths_and_reasoning)
+    paginator = Paginator(maths_and_reasoning, 3) 
+    page_number = request.GET.get("page")
+    page_obj = paginator.get_page(page_number)
+    return render(request,'myapp/sawaljawab.html',{'page_obj':page_obj})
 
 # ----------------------------- aptitude questions here ------------------------------------
 def aptitude(request):

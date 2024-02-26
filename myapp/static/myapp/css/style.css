@@ -197,7 +197,7 @@ footer a:hover {
 .innersection{
     width: auto;
     height: auto;
-    margin: 0px auto;
+   
     background-color:white;
     border-radius: 5px;
 }
@@ -243,6 +243,10 @@ border-radius: 3px;
     border-radius: 3px;
 
     }
+.pagination > span{
+      margin: auto;
+      text-align: center;
+  }
 
 
 
