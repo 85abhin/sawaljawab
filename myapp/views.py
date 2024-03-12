@@ -22,7 +22,6 @@ def reasoning(request):
 
 def reasoning_questions(request,category_slug):
     maths_and_reasoning=Maths_and_Reasoning.objects.filter(question_topic=category_slug) 
-    print(maths_and_reasoning)
     paginator = Paginator(maths_and_reasoning, 3) 
     page_number = request.GET.get("page")
     page_obj = paginator.get_page(page_number)
@@ -35,6 +34,14 @@ def aptitude(request):
 # ----------------------------- English questions here ------------------------------------
 def english(request):
     return render(request,'myapp/english.html')
+
+def english_questions(request,category_slug):
+    english=English_and_literature.objects.filter(question_topic=category_slug) 
+    paginator = Paginator(english, 3) 
+    page_number = request.GET.get("page")
+    page_obj = paginator.get_page(page_number)
+    return render(request,'myapp/sawaljawab.html',{'page_obj':page_obj})
+
 
 # ----------------------------- ગુજરાતી questions here ------------------------------------
 def gujarati(request):
