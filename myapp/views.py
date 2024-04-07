@@ -47,9 +47,13 @@ def english_questions(request,category_slug):
 def gujarati(request):
     return render(request,'myapp/gujarati.html')
 
-# ----------------------------- ગુજરાતી questions here ------------------------------------
-def gujarati(request):
-    return render(request,'myapp/gujarati.html')
+
+def gujarati_questions(request,category_slug):
+    gujarati=Gujarati_and_literature.objects.filter(question_topic=category_slug) 
+    paginator = Paginator(gujarati, 3) 
+    page_number = request.GET.get("page")
+    page_obj = paginator.get_page(page_number)
+    return render(request,'myapp/sawaljawab.html',{'page_obj':page_obj})
 
 # ----------------------------- About Us here ------------------------------------
 def AboutUs(request):

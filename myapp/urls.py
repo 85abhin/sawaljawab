@@ -13,5 +13,6 @@ urlpatterns = [
         path('english/',views.english,name='englishpage'),
         path('english_questions/<slug:category_slug>/',views.english_questions,name='englishquestionspage'),
         path('gujarati/',views.gujarati,name='gujaratipage'),
+        path('gujarati_questions/<slug:category_slug>/',views.gujarati_questions,name='gujaratiquestionspage'),
         path('aboutus/',views.AboutUs,name='aboutus'),
 ]
