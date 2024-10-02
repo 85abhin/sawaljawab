@@ -27,3 +27,7 @@ class history_questionsAdmin(admin.ModelAdmin):
 class geograpphy_questionsAdmin(admin.ModelAdmin):
     list_display=['question','answer','opt_A','opt_B','opt_C','opt_D','ans_description','category','question_topic']
 
+@admin.register(Computer_Operator)
+class Computer_questionsAdmin(admin.ModelAdmin):
+    list_display=['question','answer','opt_A','opt_B','opt_C','opt_D','ans_description','category','question_topic']
+

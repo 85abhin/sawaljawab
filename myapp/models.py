@@ -54,3 +54,6 @@ class history_questions(Current_Affairs):
 
 class geograpphy_questions(Current_Affairs):
     pass
+
+class Computer_Operator(Current_Affairs):
+    pass

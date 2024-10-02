@@ -55,6 +55,20 @@ def gujarati_questions(request,category_slug):
     page_obj = paginator.get_page(page_number)
     return render(request,'myapp/sawaljawab.html',{'page_obj':page_obj})
 
+
+# ----------------------------- Computer Operator questions here ------------------------------------
+def computer(request):
+    return render(request,'myapp/gujarati.html')
+
+
+def computer_questions(request,category_slug):
+    comp=Computer_Operator.objects.filter(question_topic=category_slug) 
+    paginator = Paginator(comp, 3) 
+    page_number = request.GET.get("page")
+    page_obj = paginator.get_page(page_number)
+    return render(request,'myapp/sawaljawab.html',{'page_obj':page_obj})
+
+
 # ----------------------------- About Us here ------------------------------------
 def AboutUs(request):
     return render(request,'myapp/aboutus.html')

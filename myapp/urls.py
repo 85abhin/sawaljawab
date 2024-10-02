@@ -4,7 +4,7 @@ from myapp import views
 
 urlpatterns = [
         path('base/',views.base),
-        path('home/',views.home,name='homepage'),
+        path('',views.home,name='homepage'),
         path('currentaffairs/',views.currentaffairs,name='currentaffairspage'),
         # path('sawaljawab/',views.sawaljawab,name='sawaljawabpage'),
         path('reasoning/',views.reasoning,name='reasoningpage'),
@@ -14,5 +14,6 @@ urlpatterns = [
         path('english_questions/<slug:category_slug>/',views.english_questions,name='englishquestionspage'),
         path('gujarati/',views.gujarati,name='gujaratipage'),
         path('gujarati_questions/<slug:category_slug>/',views.gujarati_questions,name='gujaratiquestionspage'),
+        path('computer_operator/<slug:category_slug>/',views.computer_questions,name='computer_questions'),
         path('aboutus/',views.AboutUs,name='aboutus'),
 ]
