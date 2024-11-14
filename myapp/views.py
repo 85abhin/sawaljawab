@@ -16,7 +16,7 @@ def currentaffairs(request):
     return render(request,'myapp/currentaffairs.html')
 
 
-# In reasoning page, all resoning topics list here..
+# In reasoning page, all reasoning topics list here..
 def reasoning(request):
     return render(request,'myapp/reasoning.html')
 
