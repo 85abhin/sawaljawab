@@ -16,7 +16,7 @@
             <div class="innersection">
                        {% for q in page_obj %}  
                             <div>
-                                <h4 style="text-align: left; letter-spacing: normal; font-weight: bolder;"> <span class="question_id">{{ page_obj.start_index|add:forloop.counter0 }})</span> {{q.question}}</h4>
+                                <h4 style="text-align: left; letter-spacing: normal; font-weight:bold;"> <span class="question_id">{{ page_obj.start_index|add:forloop.counter0 }})</span> {{q.question}}</h4>
                             
                                     <ul style="text-align: left; list-style:upper-alpha;">
                                         <li><a onclick="optASelected(this, '{{ q.answer }}', '{{ q.ans_description}}')">{{q.opt_A}}</a></li>
