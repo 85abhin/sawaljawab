@@ -7,7 +7,6 @@ from django.core.paginator import Paginator
 def base(request):
     return render(request,'myapp/base.html')
 
-
 def home(request):
     return render(request,'myapp/home.html')
 
@@ -67,6 +66,26 @@ def computer_questions(request,category_slug):
     page_number = request.GET.get("page")
     page_obj = paginator.get_page(page_number)
     return render(request,'myapp/sawaljawab.html',{'page_obj':page_obj})
+
+# --------------general Knowledge--------------------------------------
+
+def GK(request):
+    return render(request,'myapp/gk.html')
+
+
+def GK_questions(request,category_slug):
+    gk=General_knowledge.objects.filter(question_topic=category_slug) 
+    paginator = Paginator(gk, 3) 
+    page_number = request.GET.get("page")
+    page_obj = paginator.get_page(page_number)
+    return render(request,'myapp/sawaljawab.html',{'page_obj':page_obj})
+
+
+
+
+
+
+
 
 
 # ----------------------------- About Us here ------------------------------------

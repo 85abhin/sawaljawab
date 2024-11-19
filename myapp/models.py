@@ -57,3 +57,6 @@ class geograpphy_questions(Current_Affairs):
 
 class Computer_Operator(Current_Affairs):
     pass
+
+class General_knowledge(Current_Affairs):
+    pass
