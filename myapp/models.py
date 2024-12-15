@@ -60,3 +60,6 @@ class Computer_Operator(Current_Affairs):
 
 class General_knowledge(Current_Affairs):
     pass
+
+class Current_Affairs2(Current_Affairs):
+    pass

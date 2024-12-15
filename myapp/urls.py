@@ -15,6 +15,7 @@ urlpatterns = [
         path('gujarati/',views.gujarati,name='gujaratipage'),
         path('gujarati_questions/<slug:category_slug>/',views.gujarati_questions,name='gujaratiquestionspage'),
         path('computer_operator/<slug:category_slug>/',views.computer_questions,name='computer_questions'),
+        path('current_affairs/<slug:category_slug>/',views.currentAffairs_questions,name='currentaffairs_questions'),
         path('generalknowledge/',views.GK,name='general_knowledge'),
         path('generalknowledge/<slug:category_slug>/',views.GK_questions,name='gk_questions'),
         path('aboutus/',views.AboutUs,name='aboutus'),

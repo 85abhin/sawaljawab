@@ -36,3 +36,7 @@ class Computer_questionsAdmin(admin.ModelAdmin):
 class General_KnowledgeAdmin(admin.ModelAdmin):
     list_display=['question','answer','opt_A','opt_B','opt_C','opt_D','ans_description','category','question_topic']
 
+@admin.register(Current_Affairs2)
+class Current_Affairs2Admin(admin.ModelAdmin):
+    list_display=['question','answer','opt_A','opt_B','opt_C','opt_D','ans_description','category','question_topic']
+

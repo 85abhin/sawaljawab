@@ -56,8 +56,8 @@ def gujarati_questions(request,category_slug):
 
 
 # ----------------------------- Computer Operator questions here ------------------------------------
-def computer(request):
-    return render(request,'myapp/gujarati.html')
+# def computer(request):
+#     return render(request,'myapp/gujarati.html')
 
 
 def computer_questions(request,category_slug):
@@ -79,6 +79,30 @@ def GK_questions(request,category_slug):
     page_number = request.GET.get("page")
     page_obj = paginator.get_page(page_number)
     return render(request,'myapp/sawaljawab.html',{'page_obj':page_obj})
+
+
+# ---------------CurrentAfairs Questions -------
+# def computer(request):
+#     return render(request,'myapp/gujarati.html')
+
+
+def currentAffairs_questions(request,category_slug):
+    current=Current_Affairs2.objects.filter(question_topic=category_slug) 
+    paginator = Paginator(current, 3) 
+    page_number = request.GET.get("page")
+    page_obj = paginator.get_page(page_number)
+    return render(request,'myapp/sawaljawab.html',{'page_obj':page_obj})
+
+
+
+
+
+
+
+
+
+
+
 
 
 
