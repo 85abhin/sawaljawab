@@ -63,3 +63,6 @@ class General_knowledge(Current_Affairs):
 
 class Current_Affairs2(Current_Affairs):
     pass
+
+class Question_Paper(Current_Affairs):
+    pass

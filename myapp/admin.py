@@ -40,3 +40,8 @@ class General_KnowledgeAdmin(admin.ModelAdmin):
 class Current_Affairs2Admin(admin.ModelAdmin):
     list_display=['question','answer','opt_A','opt_B','opt_C','opt_D','ans_description','category','question_topic']
 
+
+@admin.register(Question_Paper)
+class Question_PaperAdmin(admin.ModelAdmin):
+    list_display=['question','answer','opt_A','opt_B','opt_C','opt_D','ans_description','category','question_topic']
+

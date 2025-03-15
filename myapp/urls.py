@@ -19,4 +19,6 @@ urlpatterns = [
         path('generalknowledge/',views.GK,name='general_knowledge'),
         path('generalknowledge/<slug:category_slug>/',views.GK_questions,name='gk_questions'),
         path('aboutus/',views.AboutUs,name='aboutus'),
+        path('old_questions/',views.Old_Question_Paper,name='old_questions'),
+         path('old_questions/<slug:category_slug>/',views.Old_questions,name='old_questions_answers'),
 ]

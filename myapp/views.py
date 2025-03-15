@@ -95,6 +95,17 @@ def currentAffairs_questions(request,category_slug):
 
 
 
+# All old exam question papers here...
+def Old_Question_Paper(request):
+    return render(request,'myapp/oldquestion.html')
+
+
+def Old_questions(request,category_slug):
+    Old_que=Question_Paper.objects.filter(question_topic=category_slug) 
+    paginator = Paginator(Old_que, 4) 
+    page_number = request.GET.get("page")
+    page_obj = paginator.get_page(page_number)
+    return render(request,'myapp/sawaljawab.html',{'page_obj':page_obj})
 
 
 

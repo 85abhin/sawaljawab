@@ -136,7 +136,7 @@ footer a:hover {
 }
 .column> ul > li > a:hover{
   color: green;
-  font-size: 20px;
+  font-size: 15px;
   padding: 5px;
   font-weight: bold;
 }
