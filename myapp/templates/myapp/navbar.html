@@ -1,4 +1,7 @@
 {% load static %}
+<marquee width="" direction="left" height="25px">
+  <p style="color: red; font-size: 20px; font-weight: bolder;" >This site is under work in progress,stay tuned. It will update every week.</p>
+  </marquee>
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
@@ -10,18 +13,23 @@
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="{% url 'homepage' %}">Home</a>
           </li>
-          <!-- <li class="nav-item">
-            <a class="nav-link" href="#">Login</a>
-          </li> -->
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'old_questions'%}">
+                Old Exam Questions
+            </a>
+         </li>
+         <li class="nav-item">
+          <a class="nav-link" href="{% url 'old_questions'%}">
+              ITI Exam Questions
+          </a>
+       </li>
           <li class="nav-item">
             <a class="nav-link" href="{% url 'aboutus' %}">About Us</a>  
           </li>
         </ul>
       
       </div>
-      <marquee width="60%" direction="left" height="100px">
-        <p style="color: red; font-size: 20px; font-weight: bolder;" >This site is under work in progress,stay tuned. It will update every week.</p>
-        </marquee>
+    
     </div>
   </nav>
 
