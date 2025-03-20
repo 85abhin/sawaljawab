@@ -5,9 +5,8 @@
   margin:0;
   padding:0;
   box-sizing:border-box;
-  font-family: 'Anek Gujarati', sans-serif;
-  font-family: 'Poppins', sans-serif;
-  font-family: 'PT Sans', sans-serif;
+  font-family: "Kanit", sans-serif;
+  
 } 
 
 .collapse > .navbar-brand{
@@ -15,8 +14,7 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .collapse > .navbar-nav > .nav-item > .nav-link{
-    font-size: 20px;
-  
+    font-size: 19px;
     font-family: 'PT Sans', sans-serif;
     color: #232121;
 }
@@ -209,7 +207,7 @@ footer a:hover {
     font-family: 'Noto Serif Gujarati', serif;
     font-family: 'Poppins', sans-serif;
     font-family: 'PT Sans', sans-serif;
-    font-size: 20px;
+    font-size: 19px;
     width: auto;
     height: auto;
     margin-left: 10px;
