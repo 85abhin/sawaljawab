@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-lodg2%jy=95spkn2rn$*8-#_52*65v8o106jg_%c1^es*fe*la
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['www.savaljawab.in','savaljawab.in',]
+ALLOWED_HOSTS = []
 
 
 # Application definition
